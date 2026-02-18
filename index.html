@@ -40,23 +40,47 @@
   </head>
   <body class="min-h-screen max-w-md bg-base-200 mx-auto">
     <div class="logo w-[200px] pt-32 mx-auto">
-        <img src="./assets/Logo-full.png" alt="Logo">
+      <img src="./assets/Logo-full.png" alt="Logo" />
     </div>
 
     <div class="form">
-        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto mt-10 rounded-3xl p-2">
-      <div class="card-body">
-        <fieldset class="fieldset">
-          <label class="label text-neutral font-medium text-base">Mobile Number</label>
-          <input maxlength="11" minlength="11" type="text" class="input text-neutral font-light text-base rounded-full bg-base-200 py-4" placeholder="Enter your 11 digit number" />
-          <label class="label text-neutral text-base font-medium mt-4">4 Digit Pin</label>
-          <input maxlength="4" minlength="4" type="password" class="input text-neutral font-light text-base rounded-full bg-base-200 py-4" placeholder="Enter 4 Digit Pin" />
-          <button class="btn btn-primary mt-4 rounded-full text-lg font-semibold py-4">Login</button>
-        </fieldset>
+      <div
+        class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto mt-10 rounded-3xl p-2"
+      >
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral font-medium text-base"
+              >Mobile Number</label
+            >
+            <input
+              id="input-number"
+              maxlength="11"
+              minlength="11"
+              type="text"
+              class="input text-neutral font-light text-base rounded-full bg-base-200 py-4"
+              placeholder="Enter your 11 digit number"
+            />
+            <label class="label text-neutral text-base font-medium mt-4"
+              >4 Digit Pin</label
+            >
+            <input
+              id="input-pin"
+              maxlength="4"
+              minlength="4"
+              type="password"
+              class="input text-neutral font-light text-base rounded-full bg-base-200 py-4"
+              placeholder="Enter 4 Digit Pin"
+            />
+            <button
+              id="login-btn"
+              class="btn btn-primary mt-4 rounded-full text-lg font-semibold py-4"
+            >
+              Login
+            </button>
+          </fieldset>
+        </div>
       </div>
     </div>
-    </div>
-
 
     <script src="./js/login.js"></script>
   </body>
