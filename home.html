@@ -1,12 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo | Home</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-</head>
-<body>
-    Home page
-</body>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- tailwind + daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts - outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom style -->
+    <style>
+      * {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen max-w-md bg-base-200 mx-auto">
+    <header class="border-b-2 border-gray-300">
+      <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
+        <div class="left flex gap-2">
+          <div class="logo w-[60px]">
+            <img src="./assets/logo.png" alt="Logo" />
+          </div>
+          <div class="balance-info">
+            <h2 class="text-xl font-bold text-neutral">
+              $ <span id="balance">45000</span>
+            </h2>
+            <p class="text-neutral/50 text-sm">Available Balance</p>
+          </div>
+        </div>
+        <div class="right">
+          <a
+            href="/index.html"
+            class="btn btn-soft text-neutral/50 text-sm rounded-lg"
+            ><i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>Log
+            Out</a
+          >
+        </div>
+      </section>
+    </header>
+
+    <section class="w-11/12 mx-auto py-8 space-y-2">
+      <h2 class="text-2xl text-neutral font-bold">
+        Welcome to Pay<span class="text-[#7460FF]">oo</span>
+      </h2>
+      <p class="text-neutral/50 text-base mb-6">
+        Enjoy easy and convenient financial services with us. Cashout charge is
+        low and
+      </p>
+
+      <!-- buttons -->
+      <div class="buttons grid grid-cols-3 gap-3">
+        <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+          <img src="./assets/opt-1.png" alt="Add Money" />
+          <p class="text-sm">Add Money</p>
+        </button>
+        <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+          <img src="./assets/opt-2.png" alt="Cashout" />
+          <p class="text-sm">Cashout</p>
+        </button>
+        <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+          <img src="./assets/opt-3.png" alt="Transfer Money" />
+          <p class="text-sm">Transfer Money</p>
+        </button>
+        <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+          <img src="./assets/opt-4.png" alt="Get Bonus" />
+          <p class="text-sm">Get Bonus</p>
+        </button>
+        <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+          <img src="./assets/opt-5.png" alt="Pay Bill" />
+          <p class="text-sm">Pay Bill</p>
+        </button>
+        <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+          <img src="./assets/opt-6.png" alt="Transactions" />
+          <p class="text-sm">Transactions</p>
+        </button>
+      </div>
+    </section>
+  </body>
 </html>
