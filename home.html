@@ -39,7 +39,7 @@
     </style>
   </head>
   <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <header class="border-b-2 border-gray-300">
+    <header class="border-b-2 border-gray-300 sticky top-0 bg-base-200 z-10">
       <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
         <div class="left flex gap-2">
           <div class="logo w-[60px]">
@@ -100,5 +100,57 @@
         </button>
       </div>
     </section>
+
+    <section id="cashout" class="w-11/12 mx-auto py-4">
+      <h2 class="text-xl font-bold mb-4">Cash Out</h2>
+      <div class="form">
+        <div class="card bg-base-100 w-full shadow rounded-3xl p-2">
+          <div class="card-body">
+            <fieldset class="fieldset">
+              <label class="label text-neutral font-medium text-base"
+                >Agent Number</label
+              >
+              <input
+                id="cashout-number"
+                maxlength="11"
+                minlength="11"
+                type="text"
+                class="input text-neutral font-light text-base rounded-full bg-base-200 py-4 w-full"
+                placeholder="Enter 11 digit number"
+                value="01234567890"
+              />
+              <label class="label text-neutral font-medium text-base mt-4"
+                >Amount</label
+              >
+              <input
+                id="cashout-amount"
+                type="number"
+                class="input text-neutral font-light text-base rounded-full bg-base-200 py-4 w-full"
+                placeholder="Enter amount to withdraw"
+              />
+              <label class="label text-neutral text-base font-medium mt-4"
+                >Pin Number</label
+              >
+              <input
+                id="cashout-pin"
+                maxlength="4"
+                minlength="4"
+                type="password"
+                class="input text-neutral font-light text-base rounded-full bg-base-200 py-4 w-full"
+                placeholder="Enter 4 digit pin number"
+              />
+              <button
+                id="cashout-btn"
+                class="btn bg-[#3B25C1] text-white mt-4 rounded-full text-lg font-semibold py-4"
+              >
+                Withdraw Money
+              </button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/cashout.js"></script>
   </body>
 </html>
