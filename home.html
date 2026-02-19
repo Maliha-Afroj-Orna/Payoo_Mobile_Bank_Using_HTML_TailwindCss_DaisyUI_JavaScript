@@ -74,11 +74,17 @@
 
       <!-- buttons -->
       <div class="buttons grid grid-cols-3 gap-3">
-        <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+        <button
+          onclick="showOnly('add-money')"
+          class="btn flex-col h-full py-5 btn-primary btn-soft"
+        >
           <img src="./assets/opt-1.png" alt="Add Money" />
           <p class="text-sm">Add Money</p>
         </button>
-        <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+        <button
+          onclick="showOnly('cashout')"
+          class="btn flex-col h-full py-5 btn-primary btn-soft"
+        >
           <img src="./assets/opt-2.png" alt="Cashout" />
           <p class="text-sm">Cashout</p>
         </button>
@@ -94,7 +100,10 @@
           <img src="./assets/opt-5.png" alt="Pay Bill" />
           <p class="text-sm">Pay Bill</p>
         </button>
-        <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+        <button
+          onclick="showOnly('history')"
+          class="btn flex-col h-full py-5 btn-primary btn-soft"
+        >
           <img src="./assets/opt-6.png" alt="Transactions" />
           <p class="text-sm">Transactions</p>
         </button>
@@ -102,7 +111,7 @@
     </section>
 
     <!-- add money section starts -->
-    <section id="add-money" class="w-11/12 mx-auto py-4">
+    <section id="add-money" class="w-11/12 mx-auto py-4 hidden">
       <h2 class="text-xl font-bold mb-4">Add Money</h2>
       <div class="form">
         <div class="card bg-base-100 w-full shadow rounded-3xl p-2">
@@ -116,9 +125,9 @@
                 class="select text-neutral font-light text-base rounded-full bg-base-200 w-full"
               >
                 <option disabled selected>Select a bank</option>
-                <option value="Sonali">Sonali Bank</option>
-                <option value="Rupali">Rupali Bank</option>
-                <option value="IFIC">IFIC Bank</option>
+                <option value="Sonali Bank">Sonali Bank</option>
+                <option value="Rupali Bank">Rupali Bank</option>
+                <option value="IFIC Bank">IFIC Bank</option>
               </select>
               <label class="label text-neutral font-medium text-base mt-4"
                 >Bank Account Number</label
@@ -214,7 +223,14 @@
       </div>
     </section>
 
+    <!-- transaction section starts -->
+    <section id="history" class="w-11/12 mx-auto py-4 hidden">
+      <h2 class="text-xl font-bold mb-4">Transaction History</h2>
+      <div id="history-container" class="space-y-4"></div>
+    </section>
+
     <script src="./js/machine.js"></script>
+    <script src="./js/addMoney.js"></script>
     <script src="./js/cashout.js"></script>
   </body>
 </html>
