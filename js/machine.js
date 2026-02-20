@@ -22,12 +22,18 @@ function setBalance(value) {
 function showOnly(id) {
   const addMoney = document.getElementById("add-money");
   const cashout = document.getElementById("cashout");
+  const transferMoney = document.getElementById('transfer-money')
   const transaction = document.getElementById("history");
+  const bonus = document.getElementById("bonus");
+  const payBill = document.getElementById("pay-bill");
 
   // hide all
   addMoney.classList.add("hidden");
   cashout.classList.add("hidden");
+  transferMoney.classList.add("hidden");
   transaction.classList.add("hidden");
+  bonus.classList.add("hidden");
+  payBill.classList.add("hidden");
 
   // show id
   const selected = document.getElementById(id);
